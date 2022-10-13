@@ -1,5 +1,5 @@
 body {
-    background: #1abc9c;
+    background-color: yellowgreen;
     display: flex;
     height: 100vh;
     align-content: center;
@@ -18,7 +18,7 @@ body {
   
   p, a {
     text-decoration: none;
-    color: #f1c40f;
+    color: darkgreen
   }
   
   #squarefree {
@@ -48,5 +48,5 @@ body {
   }
   
   .orange {
-    background: #9b59b6;
+    background-color: burlywood;
   }

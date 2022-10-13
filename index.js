@@ -1,18 +1,18 @@
 var usedNums = new Array(76);
-
+Window.onload = newCard 
 function newCard() {
 	//Starting loop through each square card
-	for(var i=0; i < 24; i++) {  //<--always this code for loops. change in red
+	for(let i=0; i < 24; i++) {  
 		setSquare(i);
 
 	}
 }
 
 function setSquare(thisSquare) {
-	var currSquare = "square"+thisSquare;
-	var newNum;
+	let currSquare = "square"+thisSquare;
+	let newNum;
 	
-	var colPlace =new Array(0,1,2,3,4,0,1,2,3,4,0,1,3,4,0,1,2,3,4,0,1,2,3,4);
+	let colPlace =new Array(0,1,2,3,4,0,1,2,3,4,0,1,3,4,0,1,2,3,4,0,1,2,3,4);
 	
 	do {
 		newNum =(colPlace[thisSquare] * 1) + getNewNum() + 1;
@@ -29,7 +29,7 @@ function getNewNum() {
 }
 
 function anotherCard() {
-	for(var i=1; i<usedNums.length; i++) {
+	for(let i=1; i<usedNums.length; i++) {
 	usedNums[i] = false;
 	}
 	
